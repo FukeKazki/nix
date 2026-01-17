@@ -9,6 +9,7 @@
       ./hm/jujutsu.nix
       ./hm/direnv.nix
       ./hm/zsh.nix
+      ./hm/aerospace.nix
     ];
   };
 }
