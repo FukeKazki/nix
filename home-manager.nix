@@ -9,6 +9,15 @@
       jujutsu
     ];
     programs = {
+      jujutsu = {
+        enable = true;
+        settings = {
+          user = {
+            name = "FukeKazki";
+            email = "kazkichi0906@gmail.com";
+          };
+        };
+      };
       direnv = {
         enable = true;
         enableZshIntegration = true;
