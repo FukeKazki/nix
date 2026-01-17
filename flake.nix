@@ -1,5 +1,5 @@
 {
-  description = "An empty flake template that you can adapt to your own environment";
+  description = "macOS (nix-darwin) の設定を管理するフレーク";
 
   # Flake inputs
   inputs = {
