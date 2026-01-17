@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 {
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
@@ -13,15 +13,14 @@
       };
       zsh = {
         enable = true;
-        initExtraFirst = ''
+        initContent = ''
           # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
           # Initialization code that may require console input (password prompts, [y/n]
           # confirmations, etc.) must go above this block; everything else may go below.
           if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
             source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
           fi
-        '';
-        initExtra = ''
+
           source ~/.zplug/init.zsh
 
           # 補完機能を有効にする
