@@ -159,7 +159,6 @@
       zsh = {
         enable = true;
         enableCompletion = true;
-        autosuggestions.enable = true;
         syntaxHighlighting.enable = true;
         shellAliases = {
           pip = "pip3";
@@ -178,26 +177,25 @@
           gitui = "gitui -t ~/.config/gitui/themes/catppuccin-frappe.ron";
           diff = "npx difit .";
         };
-        setOptions = [
-          "AUTO_MENU"
-          "AUTO_CD"
-          "AUTO_PUSHD"
-          "SHARE_HISTORY"
-          "INC_APPEND_HISTORY"
-          "AUTO_REMOVE_SLASH"
-        ];
         zplug = {
           enable = true;
           plugins = [
             { name = "zsh-users/zsh-completions"; }
+            { name = "zsh-users/zsh-autosuggestions"; }
             { name = "zplug/zplug"; tags = [ "hook-build:'zplug --self-manage'" ]; }
             { name = "romkatv/powerlevel10k"; tags = [ "as:theme" "depth:1" ]; }
             { name = "rupa/z"; tags = [ "use:z.sh" ]; }
           ];
         };
-        initExtra = ''
+        initContent = ''
           source "$HOME/.config/zsh/prelude.zsh"
           source "$HOME/.config/zsh/completion.zsh"
+          setopt automenu
+          setopt autocd
+          setopt autopushd
+          setopt share_history
+          setopt inc_append_history
+          setopt autoremoveslash
           source "$HOME/.config/zsh/peco.zsh"
           source "$HOME/.config/zsh/fzf.zsh"
           source "$HOME/.config/zsh/mise.zsh"
