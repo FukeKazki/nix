@@ -1,10 +1,13 @@
-{ lib, ... }:
+{ lib, pkgs, ... }:
 {
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
   home-manager.backupFileExtension = "backup";
   home-manager.users.kazki = {
     home.stateVersion = "25.05";
+    home.packages = with pkgs; [
+      jujutsu
+    ];
     programs = {
       direnv = {
         enable = true;
