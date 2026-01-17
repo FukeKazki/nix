@@ -145,6 +145,7 @@
       awk = "gawk";
       gcom = "git commit";
       ls = "eza";
+      cd = "z";
       c = "clear";
       v = "nvim";
       gs = "git status";
