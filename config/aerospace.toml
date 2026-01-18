@@ -51,6 +51,7 @@ automatically-unhide-macos-hidden-apps = false
 [workspace-to-monitor-force-assignment]
 1 = ['DELL S2722QC', 'main']
 2 = ['DELL S2722QC', 'main']
+3 = ['main']
 'S' = ['DELL U2720QM', 'main']
 
 # Possible values: (qwerty|dvorak)
@@ -233,5 +234,13 @@ if.app-id = "org.mozilla.firefoxdeveloperedition" # Firefox Developer Edition
 run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
+if.app-id = "com.oecoway.friendlynetflix" # Friendly Streaming
+run = "move-node-to-workspace 3"
+
+[[on-window-detected]]
 if.app-id = "com.tinyspeck.slackmacgap" # Slack
 run = "move-node-to-workspace S"
+
+[[on-window-detected]]
+if.app-id = "com.mitchellh.ghostty" # Ghostty
+run = "move-node-to-workspace T"
