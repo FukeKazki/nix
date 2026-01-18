@@ -74,6 +74,8 @@
 
   # Finder: show hidden files
   system.defaults.finder.AppleShowAllFiles = true;
+  # Finder: show path bar
+  system.defaults.finder.ShowPathbar = true;
 
   # Required by nix-darwin for compatibility with module defaults.
   system.stateVersion = 5;
