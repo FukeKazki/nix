@@ -50,6 +50,7 @@ automatically-unhide-macos-hidden-apps = false
 # workspace 1を2番のモニターに割り当て
 [workspace-to-monitor-force-assignment]
 1 = ['DELL S2722QC', 'main']
+2 = ['DELL S2722QC', 'main']
 'S' = ['DELL U2720QM', 'main']
 
 # Possible values: (qwerty|dvorak)
