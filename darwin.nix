@@ -51,7 +51,6 @@
     ];
     casks = [
       "android-platform-tools"
-      "arc"
       "chatgpt"
       "discord"
       "figma"
@@ -59,7 +58,6 @@
       "google-chrome@canary"
       "karabiner-elements"
       "keycastr"
-      "kiro"
       "ngrok"
       "notion-calendar"
       "orbstack"
