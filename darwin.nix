@@ -31,7 +31,6 @@
       "httpie"
       "httrack"
       "hudochenkov/sshpass/sshpass"
-      "koekeishiya/formulae/yabai"
       "mise"
       "ncspot"
       "neovim"
