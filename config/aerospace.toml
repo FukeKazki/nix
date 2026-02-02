@@ -49,9 +49,10 @@ automatically-unhide-macos-hidden-apps = false
 # See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 # workspace 1を2番のモニターに割り当て
 [workspace-to-monitor-force-assignment]
-1 = ['DELL S2722QC', 'main']
-2 = ['DELL S2722QC', 'main']
-3 = ['main']
+'V' = ['DELL S2722QC', 'main']
+'B' = ['DELL S2722QC', 'main']
+'P' = ['main']
+'F' = ['main']
 'S' = ['DELL U2720QM', 'main']
 
 # Possible values: (qwerty|dvorak)
@@ -223,19 +224,19 @@ alt-shift-l = ['join-with right', 'mode main']
 # CursorとChatGPTをワークスペース1に自動移動
 [[on-window-detected]]
 if.app-id = "com.todesktop.230313mzl4w4u92" # Cursor
-run = "move-node-to-workspace 1"
+run = ["move-node-to-workspace V"]
 
 [[on-window-detected]]
 if.app-id = "com.openai.chat" # ChatGPT
-run = "move-node-to-workspace 1"
+run = "move-node-to-workspace P"
 
 [[on-window-detected]]
 if.app-id = "org.mozilla.firefoxdeveloperedition" # Firefox Developer Edition
-run = "move-node-to-workspace 2"
+run = "move-node-to-workspace B"
 
 [[on-window-detected]]
 if.app-id = "com.oecoway.friendlynetflix" # Friendly Streaming
-run = "move-node-to-workspace 3"
+run = "move-node-to-workspace F"
 
 [[on-window-detected]]
 if.app-id = "com.tinyspeck.slackmacgap" # Slack
